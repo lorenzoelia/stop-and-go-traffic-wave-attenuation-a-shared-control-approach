@@ -1,0 +1,32 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    <vType id="IDM" color="1,1,0" length="5.00" maxSpeed="30" desiredMaxSpeed="20.0" minGap="2.0" carFollowModel="IDM" accel="1.5" decel="2" tau="1.5" />
+    <vType id="ACC" color="0,1,1" length="5.00" maxSpeed="30" desiredMaxSpeed="20.0" minGap="2.0" carFollowModel="ACC" accel="1.5" decel="2" tau="3.0" />
+    <vType id="SHC" color="1,0,1" length="5.00" maxSpeed="30" desiredMaxSpeed="20.0" minGap="2.0" carFollowModel="SHCTRL" accel="1.5" decel="2" tau="2.5" hControlTimeHeadway="2.0" cControlTimeHeadway="3.0" excessTime="0.25" />
+    <vTypeDistribution id="typedist1" vTypes="ACC SHC IDM" probabilities="0.0 0.0 1.0" />
+    
+    <route id="r_0" edges="E1" />
+    <route id="r_1" edges="E2" />
+    <route id="r_2" edges="E0" />
+    
+<vehicle id="veh00" type="typedist1" route="r_0" depart="0" departPos="0.00" departSpeed="10.816607352436277" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh01" type="typedist1" route="r_0" depart="0" departPos="45.45" departSpeed="9.696367140938287" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh02" type="typedist1" route="r_0" depart="0" departPos="90.89" departSpeed="10.798427141026023" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh03" type="typedist1" route="r_0" depart="0" departPos="136.34" departSpeed="10.938932442268564" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh04" type="typedist1" route="r_0" depart="0" departPos="181.78" departSpeed="8.908763681020861" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh05" type="typedist1" route="r_0" depart="0" departPos="227.23" departSpeed="11.570644023627986" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh06" type="typedist1" route="r_0" depart="0" departPos="272.67" departSpeed="8.516197038753548" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh07" type="typedist1" route="r_1" depart="0" departPos="0.00" departSpeed="9.718041141838972" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh08" type="typedist1" route="r_1" depart="0" departPos="45.45" departSpeed="10.428461576554636" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh09" type="typedist1" route="r_1" depart="0" departPos="90.89" departSpeed="9.638733255562729" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh10" type="typedist1" route="r_1" depart="0" departPos="136.34" departSpeed="9.592992074853225" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh11" type="typedist1" route="r_1" depart="0" departPos="181.78" departSpeed="10.548243195418992" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh12" type="typedist1" route="r_1" depart="0" departPos="227.23" departSpeed="8.112670087020394" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh13" type="typedist1" route="r_1" depart="0" departPos="272.67" departSpeed="8.846870522811455" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh14" type="typedist1" route="r_2" depart="0" departPos="0.00" departSpeed="12.034903988561158" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh15" type="typedist1" route="r_2" depart="0" departPos="45.45" departSpeed="10.726778283877831" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh16" type="typedist1" route="r_2" depart="0" departPos="90.89" departSpeed="9.176136463869963" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh17" type="typedist1" route="r_2" depart="0" departPos="136.34" departSpeed="9.279678297758874" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh18" type="typedist1" route="r_2" depart="0" departPos="181.78" departSpeed="11.655608833474913" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh19" type="typedist1" route="r_2" depart="0" departPos="227.23" departSpeed="8.118786025037524" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh20" type="typedist1" route="r_2" depart="0" departPos="272.67" departSpeed="10.86618498485152" speedFactor="1.0" insertionChecks="none" />
+	</routes>

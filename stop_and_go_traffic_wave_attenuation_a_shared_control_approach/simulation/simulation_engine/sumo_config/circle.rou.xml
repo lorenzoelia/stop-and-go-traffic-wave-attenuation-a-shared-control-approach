@@ -1,0 +1,96 @@
+<routes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://sumo.dlr.de/xsd/routes_file.xsd">
+    
+    <vType id="IDM" color="1,1,0" length="5.00" maxSpeed="70" carFollowModel="IDM" accel="1.5" decel="2" tau="0.7" minGap="2.0" actionStepLength="0.1" />
+
+    <vType id="ACC" color="0,1,1" length="5.00" minGap="2.0" maxSpeed="70.00" carFollowModel="ACC" accel="1.5" decel="2" tau="1.3" />
+
+    <vType id="SHC" color="1,0,1" length="5.00" maxSpeed="70" accel="1.5" decel="2" minGap="2.0" actionStepLength="0.1" carFollowModel="SHCTRL" tau="1.0" hControlTimeHeadway="0.7" cControlTimeHeadway="1.3" excessTime="0.25" sigma1="1.0" sigma2="1.0" />
+    
+    <vTypeDistribution id="typedist1" vTypes="ACC SHC IDM" probabilities="1.0 0.0 0.0" />
+
+    <route id="r_0" edges="E4 E5" />
+    <route id="r_1" edges="E5 E6" />
+    <route id="r_2" edges="E6 E7" />
+    <route id="r_3" edges="E7 E4" />
+
+	<vehicle id="veh00" type="typedist1" route="r_0" depart="0" departPos="0.00" departSpeed="4.170302912676474" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh01" type="typedist1" route="r_0" depart="0" departPos="11.23" departSpeed="4.711975524326204" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh02" type="typedist1" route="r_0" depart="0" departPos="22.46" departSpeed="5.084394887750741" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh03" type="typedist1" route="r_0" depart="0" departPos="33.68" departSpeed="5.251022680451609" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh04" type="typedist1" route="r_0" depart="0" departPos="44.91" departSpeed="6.585524585164417" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh05" type="typedist1" route="r_0" depart="0" departPos="56.14" departSpeed="3.59859290463926" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh06" type="typedist1" route="r_0" depart="0" departPos="67.37" departSpeed="3.2903894372167724" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh07" type="typedist1" route="r_0" depart="0" departPos="78.60" departSpeed="4.7650871629017315" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh08" type="typedist1" route="r_0" depart="0" departPos="89.82" departSpeed="4.692680074552947" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh09" type="typedist1" route="r_0" depart="0" departPos="101.05" departSpeed="5.318631777212737" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh10" type="typedist1" route="r_0" depart="0" departPos="112.28" departSpeed="4.499507090225895" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh11" type="typedist1" route="r_0" depart="0" departPos="123.51" departSpeed="6.217158119311697" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh12" type="typedist1" route="r_0" depart="0" departPos="134.74" departSpeed="4.07586140863131" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh13" type="typedist1" route="r_0" depart="0" departPos="145.96" departSpeed="4.126068796089876" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh14" type="typedist1" route="r_0" depart="0" departPos="157.19" departSpeed="6.993657362403687" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh15" type="typedist1" route="r_0" depart="0" departPos="168.42" departSpeed="5.6447936448152225" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh16" type="typedist1" route="r_0" depart="0" departPos="179.65" departSpeed="5.519023244875693" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh17" type="typedist1" route="r_0" depart="0" departPos="190.88" departSpeed="3.425253542710238" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh18" type="typedist1" route="r_0" depart="0" departPos="202.10" departSpeed="4.273965688606921" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh19" type="typedist1" route="r_0" depart="0" departPos="213.33" departSpeed="5.0544028139252095" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh20" type="typedist1" route="r_1" depart="0" departPos="0.00" departSpeed="5.205971567831133" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh21" type="typedist1" route="r_1" depart="0" departPos="11.23" departSpeed="5.713438070260114" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh22" type="typedist1" route="r_1" depart="0" departPos="22.46" departSpeed="5.680166367329766" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh23" type="typedist1" route="r_1" depart="0" departPos="33.68" departSpeed="5.514375707152782" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh24" type="typedist1" route="r_1" depart="0" departPos="44.91" departSpeed="4.533023704848135" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh25" type="typedist1" route="r_1" depart="0" departPos="56.14" departSpeed="4.334965515930442" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh26" type="typedist1" route="r_1" depart="0" departPos="67.37" departSpeed="5.355415366228468" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh27" type="typedist1" route="r_1" depart="0" departPos="78.60" departSpeed="5.800445183389442" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh28" type="typedist1" route="r_1" depart="0" departPos="89.82" departSpeed="4.53200367348382" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh29" type="typedist1" route="r_1" depart="0" departPos="101.05" departSpeed="4.513235199381145" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh30" type="typedist1" route="r_1" depart="0" departPos="112.28" departSpeed="6.652351100129106" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh31" type="typedist1" route="r_1" depart="0" departPos="123.51" departSpeed="5.359291875269515" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh32" type="typedist1" route="r_1" depart="0" departPos="134.74" departSpeed="3.456108217010905" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh33" type="typedist1" route="r_1" depart="0" departPos="145.96" departSpeed="5.552462740380421" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh34" type="typedist1" route="r_1" depart="0" departPos="157.19" departSpeed="5.47442105082753" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh35" type="typedist1" route="r_1" depart="0" departPos="168.42" departSpeed="2.9619739398734164" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh36" type="typedist1" route="r_1" depart="0" departPos="179.65" departSpeed="4.4681222831762515" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh37" type="typedist1" route="r_1" depart="0" departPos="190.88" departSpeed="5.704939328892801" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh38" type="typedist1" route="r_1" depart="0" departPos="202.10" departSpeed="4.192891996259035" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh39" type="typedist1" route="r_1" depart="0" departPos="213.33" departSpeed="5.615348385011762" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh40" type="typedist1" route="r_2" depart="0" departPos="0.00" departSpeed="3.8339204867114507" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh41" type="typedist1" route="r_2" depart="0" departPos="11.23" departSpeed="4.845751850655405" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh42" type="typedist1" route="r_2" depart="0" departPos="22.46" departSpeed="5.081038107516785" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh43" type="typedist1" route="r_2" depart="0" departPos="33.68" departSpeed="6.546205864252624" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh44" type="typedist1" route="r_2" depart="0" departPos="44.91" departSpeed="3.098997501816928" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh45" type="typedist1" route="r_2" depart="0" departPos="56.14" departSpeed="4.22184304127527" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh46" type="typedist1" route="r_2" depart="0" departPos="67.37" departSpeed="7.168995488584001" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh47" type="typedist1" route="r_2" depart="0" departPos="78.60" departSpeed="5.206746373921651" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh48" type="typedist1" route="r_2" depart="0" departPos="89.82" departSpeed="5.923191495658715" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh49" type="typedist1" route="r_2" depart="0" departPos="101.05" departSpeed="3.453365039732086" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh50" type="typedist1" route="r_2" depart="0" departPos="112.28" departSpeed="3.5096512223099046" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh51" type="typedist1" route="r_2" depart="0" departPos="123.51" departSpeed="4.236104577689131" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh52" type="typedist1" route="r_2" depart="0" departPos="134.74" departSpeed="6.801653835340466" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh53" type="typedist1" route="r_2" depart="0" departPos="145.96" departSpeed="4.177776895458736" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh54" type="typedist1" route="r_2" depart="0" departPos="157.19" departSpeed="5.34376018898671" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh55" type="typedist1" route="r_2" depart="0" departPos="168.42" departSpeed="6.638996278613213" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh56" type="typedist1" route="r_2" depart="0" departPos="179.65" departSpeed="5.096546035566702" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh57" type="typedist1" route="r_2" depart="0" departPos="190.88" departSpeed="4.129579730239297" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh58" type="typedist1" route="r_2" depart="0" departPos="202.10" departSpeed="4.514942104931519" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh59" type="typedist1" route="r_2" depart="0" departPos="213.33" departSpeed="4.914233968123105" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh60" type="typedist1" route="r_3" depart="0" departPos="0.00" departSpeed="4.9616466089957285" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh61" type="typedist1" route="r_3" depart="0" departPos="11.23" departSpeed="6.039256707102453" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh62" type="typedist1" route="r_3" depart="0" departPos="22.46" departSpeed="6.397567773751372" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh63" type="typedist1" route="r_3" depart="0" departPos="33.68" departSpeed="6.575095751967911" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh64" type="typedist1" route="r_3" depart="0" departPos="44.91" departSpeed="5.909984203926209" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh65" type="typedist1" route="r_3" depart="0" departPos="56.14" departSpeed="6.548603382818109" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh66" type="typedist1" route="r_3" depart="0" departPos="67.37" departSpeed="3.314411314918395" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh67" type="typedist1" route="r_3" depart="0" departPos="78.60" departSpeed="6.039616708012523" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh68" type="typedist1" route="r_3" depart="0" departPos="89.82" departSpeed="3.4034953439504845" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh69" type="typedist1" route="r_3" depart="0" departPos="101.05" departSpeed="3.4915230437807123" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh70" type="typedist1" route="r_3" depart="0" departPos="112.28" departSpeed="4.322248524336694" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh71" type="typedist1" route="r_3" depart="0" departPos="123.51" departSpeed="5.34124272841212" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh72" type="typedist1" route="r_3" depart="0" departPos="134.74" departSpeed="6.240154748841907" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh73" type="typedist1" route="r_3" depart="0" departPos="145.96" departSpeed="4.582607351793619" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh74" type="typedist1" route="r_3" depart="0" departPos="157.19" departSpeed="6.2357163860385345" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh75" type="typedist1" route="r_3" depart="0" departPos="168.42" departSpeed="5.111795259609938" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh76" type="typedist1" route="r_3" depart="0" departPos="179.65" departSpeed="5.456578402301693" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh77" type="typedist1" route="r_3" depart="0" departPos="190.88" departSpeed="5.580014561046239" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh78" type="typedist1" route="r_3" depart="0" departPos="202.10" departSpeed="4.547234024138576" speedFactor="1.0" insertionChecks="none" />
+	<vehicle id="veh79" type="typedist1" route="r_3" depart="0" departPos="213.33" departSpeed="5.240401281517634" speedFactor="1.0" insertionChecks="none" />
+	</routes>
