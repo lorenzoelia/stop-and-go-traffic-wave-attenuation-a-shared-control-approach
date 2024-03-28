@@ -15,7 +15,7 @@ This project focuses on simulating a shared control approach for attenuating tra
 1. Clone the repository:
 
 ```
-git clone <repository_url>
+git clone github.com/lorenzoelia/stop-and-go-traffic-wave-attenuation-a-shared-control-approach
 ```
 
 2. Install SUMO (Simulation of Urban MObility) if not already installed. Refer to the [SUMO documentation](https://sumo.dlr.de/docs/) for installation instructions.
